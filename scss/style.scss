@@ -1,0 +1,31 @@
+@import "_nullstyle";
+@import "_bgrd";
+@import "_body";
+@import "_nav";
+@import "_main";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Sans&display=swap');
+// font-family: 'Montserrat', sans-serif;
+
+@font-face{
+	font-family: 'Druk_Wide';
+	src: url('../fonts/Druk\ Wide\ Medium.otf');
+	src: url('../fonts/AnyConv.com__Druk\ Wide\ Medium.eot') format('eot'),
+	url('../fonts/AnyConv.com__Druk\ Wide\ Medium.woff') format('woff'),
+	url('../fonts/AnyConv.com__Druk\ Wide\ Medium.woff2') format('woff2'),
+	url('../fonts/AnyConv.com__Druk\ Wide\ Medium.ttf') format('truetype'),
+	url('../fonts/AnyConv.com__Druk\ Wide\ Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body{
+	font-family: 'Druk_Wide';
+	min-width: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+

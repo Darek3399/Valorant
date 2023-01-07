@@ -1,0 +1,360 @@
+// main-bgrd-----------------------------------------------
+
+.main {
+	background: #2a2a2a;
+	height: 550px;
+	border-radius: 15px;
+	&__bgrd {
+		width: 100%;
+	}
+	&__bgrd-red {
+		background: rgba(235, 68, 68, 0.955);
+		height: 500px;
+	}
+	&__bgrd-img{
+		position: absolute;
+		height: 500px;
+		width: 1000px;
+		opacity: .1;
+		filter: grayscale(1);
+	}
+}
+
+// main-title--------------------------------------------
+
+.main {
+	&__title {
+		pointer-events: none;
+		transform: rotate(90deg);
+		width: 150px;
+		position: relative;
+		top: 100px;
+		left: 60px;
+	}
+	&__title-agents {
+		font-size: 55px;
+		font-family: 'Druk_Wide';
+		letter-spacing: 0.1em;
+		color: transparent;
+		-webkit-text-stroke: 0.5px white;
+	}
+}
+
+// maim-row---------------------------------------------
+
+.main {
+	&__rows {
+		display: flex;
+		gap: 60px;
+		justify-content: space-between;
+		width: 700px;
+		margin-left: 235px;
+	}
+	&__row{
+		transition: 0.2s linear;
+		position: relative;
+		background-color: #292C31;
+		width: 150px;
+		height: 352px;
+		&:hover {
+			background: #fefff7;
+			.main__row-name-country{
+			margin-left: -43px;
+			margin-top: 55px;
+			}
+			.main__row-name-country-phoenix{
+			margin-left: -48px;
+			margin-top: 60px;
+			}
+			.main__name{
+			-webkit-text-stroke: 0.8px black;
+			}
+			.main__skills{
+				bottom: -10px;
+				left: 10px;
+			}
+			.main__bottom-skill-conteiner{
+				top: 60px;
+				right: 196px;
+				opacity: 1;
+			}
+			.main__bottom-skill{
+				background: #F8F8F8;
+			}
+			.main__bottom-skill-img{
+				margin-bottom: 20px;
+				margin-left: 40px;
+				height: 120%;
+			}
+			.two{
+				right: -87px;
+			}
+			.three{
+				right: -370px;
+			}
+			.four{
+				right: -653px;
+			}
+			.main__skills{
+			background-color: #FFFFFF;
+			border: 1px solid #1F2326;
+			}
+			.main__skill-img{
+				filter: invert(1);
+			}
+			.skills-jett{
+				right: 406px;
+			}
+			.skills-jett-two{
+				right: 123px;
+			}
+			.skills-jett-three{
+				right: -160px;
+			}
+			.skills-jett-four{
+				right: -443px;
+			}
+			.skills-sova-one{
+				right: 616px;
+			}
+			.skills-sova-two{
+				right: 333px;
+			}
+			.skills-sova-three{
+				right: 50px;
+			}
+			.skills-sova-four{
+				right: -233px;
+			}
+			.skills-sage-one{
+				right: 826px;
+			}
+			.skills-sage-two{
+				right: 543px;
+			}
+			.skills-sage-three{
+				right: 260px;
+			}
+			.skills-sage-four{
+				right: -23px;
+			}
+		}
+	}
+	&__row-name-country{
+		pointer-events: none;
+		position: absolute;
+		transition: 0.2s linear;
+		transform: rotate(90deg);
+		font-family: 'Druk_Wide';
+		width: 100px;
+		height: 40px;
+		margin-top: 45px;
+		margin-left: -25px;
+	}
+	&__row-name-country-phoenix{
+		position: absolute;
+		transition: 0.2s linear;
+		transform: rotate(90deg);
+		font-family: 'Druk_Wide';
+		width: 110px;
+		height: 40px;
+		margin-top: 50px;
+		margin-left: -30px;
+	}
+	&__country {
+		font-style: normal;
+		font-size: 10px;
+		color: #FF4656;
+	}
+	&__name {
+		font-size: 25px;
+		color: transparent;
+		-webkit-text-stroke: 0.5px white;
+	}
+	&__row-character-img {
+		display: flex;
+		width: 150px;
+		height: 355px;
+	}
+	&__character-img {
+		width: 100%;
+		height: 99%;
+	}
+	&__skills {
+		transition: 0.2s linear;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 150px;
+		height: 40px;
+		background-color: #1F2326;
+		border: 1px solid white;
+	}
+	&__skill {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 25%;
+		&:hover{
+			.main__bottom-skill{
+				clip-path: polygon(100% 100%, 100% 0%, 6% 0%, 0% 15%, 0% 100%);
+				width: 280px;
+			}
+			.main__bottom-skill-description{
+			opacity: 1;
+			}
+			.main__bottom-skill-conteiner{
+				clip-path: polygon(100% 100%, 100% 0%, 6% 0%, 0% 15%, 0% 100%);
+				height: 102px;
+				width: 282px;
+			}
+		}
+	}
+	&__skill-img {
+		transition: 0.2s linear;
+		height: 60%;
+		&:hover{
+			height: 80%;
+		}
+	}
+}
+
+
+//bottom-skill------------------------------------------------
+
+.main {
+	&__bottom-skill-conteiner{
+		pointer-events: none;
+		opacity: 0;
+		width: 132px;
+		height: 102px;
+		transition: 0.2s linear;
+		background-color: black;
+		position: absolute;
+		top: 70px;    //PHOENIX-SKILL-POSITION-------------------------------------------
+		right: 186px;
+		clip-path: polygon(100% 100%, 100% 0%, 12% 0%, 0% 15%, 0% 100%);
+	}
+	&__bottom-skill {
+		width: 130px;
+		height: 100px;
+		position: absolute;
+		right: 1px;
+		top: 1px;
+		transition: 0.2s linear;
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		background: #1F2326;
+		clip-path: polygon(100% 100%, 100% 0%, 12% 0%, 0% 15%, 0% 100%);
+	}
+	&__bottom-skill-description {
+		opacity: 0;
+		transition: 0.1s linear;
+		line-height: 5px;
+		width: 150px;
+		margin: 23px 0 0 23px;
+	}
+	&__bottom-skill-title {
+		margin-bottom: 18px;
+		color: #C4C4C4;
+		font-size: 16px;
+	}
+	&__bottom-skill-subtitle {
+		font-size: 9px;
+		margin-bottom: 10px;
+	}
+	&__bottom-skill-text {
+		font-size: 8px;
+		letter-spacing: 0.1px;
+		color: #1F2326;
+		font-family: 'Montserrat', sans-serif;
+	}
+	&__bottom-skill-red-block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 70px;
+		height: 67px;
+		background: #FF4656;
+		position: absolute;
+		bottom: 15px;
+		right: 30px;
+		border-radius: 5px 0 0 0;
+	}
+	&__bottom-skill-img {
+		filter: invert(1);
+		height: 95%;
+		transition: 0.2s linear;
+	}
+	.two{     //PHOENIX-SKILL-POSITION-------------------------------------------
+		right: -97px;
+	}
+	.three{
+		right: -380px;
+	}
+	.four{
+		right: -663px;
+	}
+}
+
+
+
+
+//JETT-SKILLS-POSITION-----------------------------------------------
+.main{
+	.skills-jett{
+		right: 396px;
+	}
+	.skills-jett-two{
+		right: 113px;
+	}
+	.skills-jett-three{
+		right: -170px;
+	}
+	.skills-jett-four{
+		right: -453px;
+	}
+}
+
+
+
+//SOVA-SKILLS-POSITION-----------------------------------------------
+
+.main{
+	.skills-sova-one{
+		right: 606px;
+	}
+	.skills-sova-two{
+		right: 323px;
+	}
+	.skills-sova-three{
+		right: 40px;
+	}
+	.skills-sova-four{
+		right: -243px;
+	}
+}
+
+
+
+//SAGE-SKILLS-POSITION-----------------------------------------------
+
+.main{
+	.skills-sage-one{
+		right: 816px;
+	}
+	.skills-sage-two{
+		right: 533px;
+	}
+	.skills-sage-three{
+		right: 250px;
+	}
+	.skills-sage-four{
+		right: -33px;
+	}
+}
